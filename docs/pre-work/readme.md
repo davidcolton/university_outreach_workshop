@@ -125,7 +125,12 @@ Running Ollama locally on your computer requires the following steps:
 
 If you are having difficulties getting your environment setup, or the workshop examples are not running successfully you can always run the [Get Started with CoLab](https://github.com/generative-computing/mellea?tab=readme-ov-file#get-started-with-colab) examples from the Mellea repository. Some of the content and examples may be different but you can still see the concepts shown here at work.
 
-!!! note "Notebook execution speed tip" The default execution runtime in Colab uses a CPU. Consider using a different Colab runtime to increase execution speed, especially in situations where you may have other constraints such as a slow network connection. From the navigation bar, select `Runtime->Change runtime type`, then select either GPU- or TPU-based hardware acceleration.
+
+
+!!! note "Notebook execution speed tip"
+    The default execution runtime in Colab uses a CPU. Consider using a different Colab runtime to increase execution speed, especially in situations where you may have other constraints such as a slow network connection. From the navigation bar, select `Runtime -> Change runtime type`, then select either GPU- or TPU-based hardware acceleration.
+
+
 
 ### Colab Prerequisites
 

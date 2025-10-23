@@ -16,8 +16,13 @@ site_dir: "site"
 nav:
   - Welcome:
       - About the workshop: index.md
-  - Workshop:
+  - Documentation:
       - Lab 0. Pre-work: pre-work/readme.md
+  - Labs:
+      - Lab 1. Introduction to LLMs: labs/lab_01.md
+      - Lab 2. Getting Started with Mellea: labs/lab_02.md
+      - Lab 3. Writing Compositional Code with Generative Stubs: labs/lab_03.md
+      - Lab 4. Docling and Mellea: labs/lab_04.md
   - References:
       - IBM Granite Community: https://github.com/ibm-granite-community
 
