@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://davidcolton.github.io/university_outreach_workshop/</loc>
-         <lastmod>2025-10-23</lastmod>
-    </url>
-    <url>
-         <loc>https://davidcolton.github.io/university_outreach_workshop/lab-1/readme/</loc>
-         <lastmod>2025-10-23</lastmod>
-    </url>
-    <url>
-         <loc>https://davidcolton.github.io/university_outreach_workshop/lab-2/readme/</loc>
-         <lastmod>2025-10-23</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://davidcolton.github.io/university_outreach_workshop/lab-3/readme/</loc>
-         <lastmod>2025-10-23</lastmod>
+         <lastmod>2025-10-24</lastmod>
+    </url>
+    <url>
+         <loc>https://davidcolton.github.io/university_outreach_workshop/lab_01/readme/</loc>
+         <lastmod>2025-10-24</lastmod>
+    </url>
+    <url>
+         <loc>https://davidcolton.github.io/university_outreach_workshop/lab_02/readme/</loc>
+         <lastmod>2025-10-24</lastmod>
     </url>
     <url>
          <loc>https://davidcolton.github.io/university_outreach_workshop/pre-work/readme/</loc>
-         <lastmod>2025-10-23</lastmod>
+         <lastmod>2025-10-24</lastmod>
     </url>
 </urlset>
