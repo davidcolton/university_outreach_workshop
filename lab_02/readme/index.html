@@ -577,6 +577,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -726,6 +735,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -820,6 +838,15 @@
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1"># Display the generated email</span>
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">email</span><span class="p">))</span>
 </span></code></pre></div>
+<h2 id="summary">Summary</h2>
+<p>Most of this should look familiar by now, but the <code>validation_fn</code> and <code>check</code> should be new.</p>
+<p>We created 3 requirements:</p>
+<ul>
+<li>First requirement, the salutation, will be validated by LLM-as-a-judge on the output of the instruction. This is the default behavior.</li>
+<li>Second requirement, lower case, uses a function that takes the output of a sampling step and returns a boolean value indicating successful or unsuccessful validation. While the validation_fn parameter requires to run validation on the full session context, Mellea provides a wrapper for simpler validation functions (simple_validate(fn: Callable[[str], bool])) that take the output string and return a boolean as seen in this case.</li>
+<li>Third requirement is a <code>check()</code>. Checks are only used for validation, not for generation. Checks aim to avoid the "do not think about B" effect that often prime models (and humans) to do the opposite and "think" about B.</li>
+</ul>
+<p>We also saw in the <code>m = mellea.start_session()</code> how you can specify a different Ollama model, in case you want to try something other than Mellea's <code>ibm/granite4:micro</code> default.</p>
 
 
 
