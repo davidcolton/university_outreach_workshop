@@ -820,7 +820,7 @@
 <h2 id="lab-1-hello-mellea">Lab 1: Hello Mellea</h2>
 <p>Running <code>mellea.start_session()</code> initialize a new <code>MelleaSession</code>. The session holds three things:</p>
 <ol>
-<li>The model to use for this session. In this tutorial we will use granite3.3:8b.</li>
+<li>The model to use for this session.</li>
 <li>An inference engine; i.e., the code that actually calls our model. We will be using ollama, but you can also use Huggingface or any OpenAI-compatible endpoint.</li>
 <li>A <code>Context</code>, which tells Mellea how to remember context between requests. This is sometimes called the "Message History" in other frameworks. Throughout these early tutoriala, we will be using a <code>SimpleContext</code>. In <code>SimpleContext</code>, <strong>every request starts with a fresh context</strong>. There is no preserved chat history between requests. Mellea provides other types of context, but for now we will not be using those features. See the <a href="https://github.com/generative-computing/mellea">Mellea Tutorials</a> for further details.</li>
 </ol>
@@ -838,8 +838,8 @@
 <p>To use Mellea we import the <code>mellea</code> library. The other imports are only for displaying output and for formatting the notebook cells and can be ignored.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-</div>
 <p>If you see something about the Rust compiler, please confirm you are using python3.11, or python3.12 anything above that has a Rust dependency.</p>
+</div>
 <h3 id="chat-with-mellea">Chat with Mellea</h3>
 <p>We can have a simple chat with a <code>mellea</code> session by starting a session, <code>m</code>, and then using the <code>chat</code> function. We can then display the answer by displaying the answer objects content.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Create a Mellea model using the granite3.3:8b model and the ollama inference engine</span>
