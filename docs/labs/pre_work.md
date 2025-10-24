@@ -10,19 +10,13 @@ logo: images/ibm-blue-background.png
 The labs in this workshop are [Jupyter notebooks](https://jupyter.org/). Check out [Running the Granite Notebooks](#running-the-granite-notebooks) section on how to setup the way you want to run the notebooks.
 
 - [Pre-work](#pre-work)
-  - [Running the Granite Notebooks Locally](#running-the-granite-notebooks-locally)
   - [Local Prerequisites](#local-prerequisites)
     - [Git](#git)
     - [Uv](#uv)
   - [Clone the Granite Workshop Repository](#clone-the-granite-workshop-repository)
     - [Sync the Python Virtual Environment](#sync-the-python-virtual-environment)
-    - [Serving the Granite AI Models](#serving-the-granite-ai-models)
-      - [Replicate AI Cloud Platform](#replicate-ai-cloud-platform)
-      - [Running Ollama Locally](#running-ollama-locally)
-  - [Running the Granite Notebooks Remotely (Colab)](#running-the-granite-notebooks-remotely-colab)
-    - [Colab Prerequisites](#colab-prerequisites)
-    - [Serving the Granite AI Models for Colab](#serving-the-granite-ai-models-for-colab)
-      - [Replicate AI Cloud Platform for Colab](#replicate-ai-cloud-platform-for-colab)
+    - [Running Ollama Locally](#running-ollama-locally)
+  - [Running the Notebooks Remotely (Colab)](#running-the-notebooks-remotely-colab)
 
 
 ## Running the Granite Notebooks
@@ -120,6 +114,8 @@ Running Ollama locally on your computer requires the following steps:
     ```shell
     ollama pull granite4:micro
     ```
+
+
 
 ## Running the Notebooks Remotely (Colab)
 

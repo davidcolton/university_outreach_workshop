@@ -28,18 +28,21 @@ The introductory page of the workshop is broken down into the following sections
 - [About this workshop](#about-this-workshop)
   - [Agenda](#agenda)
   - [Technology Used](#technology-used)
-  - [Credits](#credits)
 
 
 
 ### Agenda
 
-| Link to Content                       | Description               |
-| :------------------------------------ | :------------------------ |
-| [Lab 0: Pre-work](pre-work/readme.md) | Pre-work for the workshop |
-|                                       |                           |
-|                                       |                           |
-|                                       |                           |
+| Link to Content                     | Description                                               |
+| :---------------------------------- | :-------------------------------------------------------- |
+| [Lab 0: Pre-work](labs/pre_work.md) | Pre-work for the workshop                                 |
+| [Lab 1:](labs/lab_01.md)            | Hello Mellea                                              |
+| [Lab 2:](labs/lab_02.md)            | Instruct-Validate-Repair                                  |
+| [Lab 3:](labs/lab_03.md)            | Writing Compositional Code with Generative Stubs          |
+| [Lab 4:](labs/lab_04.md)            | Docling and Mellea                                        |
+| [Lab 5:](labs/lab_05.md)            | Generative Objects                                        |
+| [Lab 6:](labs/lab_06.md)            | Information Extraction with Generative Slots              |
+| [Lab 7:](labs/lab_07.md)            | MiniResearcher: A Retrieval-Augmented Generative Pipeline |
 
 ### Technology Used
 

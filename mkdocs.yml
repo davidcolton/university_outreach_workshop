@@ -17,9 +17,18 @@ nav:
   - Welcome:
       - About the workshop: index.md
   - Documentation:
-      - Lab 0. Pre-work: pre-work/readme.md
+      - Lab 0. Pre-work: labs/pre_work.md
+      - Lab 1. Getting Started with Mellea: labs/lab_01.md
+      - Lab 2. Instruct-Validate-Repair: labs/lab_02.md
+      - Lab 3. Compositional Code with Generative Stubs: labs/lab_03.md
+      - Lab 4. Document Understanding with Docling: labs/lab_04.md
+      - Lab 5. Structured Data with Mellea: labs/lab_05.md
+      - Lab 6. Building a Knowledge Base: labs/lab_06.md
+      - Lab 7. Putting it all together - Mini Researcher: labs/lab_07.md
   - References:
       - IBM Granite Community: https://github.com/ibm-granite-community
+      - Mellea Project: https://mellea.ai/docs/
+      - Docling Project: https://github.com/docling-project/docling
 
 # Extensions
 markdown_extensions:
