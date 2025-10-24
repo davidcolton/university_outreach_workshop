@@ -6,19 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Hello Mellea">
+        <meta name="description" content="Writing Compositional Code with Generative Stubs">
       
       
         <meta name="author" content="IBM Research">
       
       
-        <link rel="canonical" href="https://davidcolton.github.io/university_outreach_workshop/lab_01/readme/">
+        <link rel="canonical" href="https://davidcolton.github.io/university_outreach_workshop/labs/lab_03/">
       
       
-        <link rel="prev" href="../../pre-work/readme/">
+        <link rel="prev" href="../lab_02/">
       
-      
-        <link rel="next" href="../../lab_02/readme/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Workshop Lab 1 - IBM University Outreach Programme</title>
+        <title>Workshop Lab 3 - IBM University Outreach Programme</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-generative-computing" class="md-skip">
+        <a href="#lab-3-writing-compositional-code-with-generative-stubs" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Workshop Lab 1
+              Workshop Lab 3
             
           </span>
         </div>
@@ -247,7 +245,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../pre-work/readme/" class="md-tabs__link">
+        <a href="../pre_work/" class="md-tabs__link">
           
   
   
@@ -448,12 +446,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pre-work/readme/" class="md-nav__link">
+      <a href="../pre_work/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Lab 0. Pre-work
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab_01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 1. Getting Started with Mellea
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab_02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 2. Instruct-Validate-Repair
     
   </span>
   
@@ -485,7 +529,7 @@
   
   
   <span class="md-ellipsis">
-    Lab 1. Getting Started with Mellea
+    Lab 3. Compositional Code with Generative Stubs
     
   </span>
   
@@ -498,7 +542,7 @@
   
   
   <span class="md-ellipsis">
-    Lab 1. Getting Started with Mellea
+    Lab 3. Compositional Code with Generative Stubs
     
   </span>
   
@@ -521,46 +565,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mellea" class="md-nav__link">
+  <a href="#goals" class="md-nav__link">
     <span class="md-ellipsis">
-      Mellea
+      Goals
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#main-code-snippets-of-interest" class="md-nav__link">
     <span class="md-ellipsis">
-      Features
+      Main code snippets of interest
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lab-1-hello-mellea" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lab 1: Hello Mellea
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lab 1: Hello Mellea">
+    <nav class="md-nav" aria-label="Main code snippets of interest">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#imports" class="md-nav__link">
+  <a href="#1-imports-and-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Imports
+      1. Imports and setup
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chat-with-mellea" class="md-nav__link">
+  <a href="#2-summariser-library" class="md-nav__link">
     <span class="md-ellipsis">
-      Chat with Mellea
+      2. Summariser library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-decision-aides-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Decision-aides library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-example-summarize-a-meeting-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Example: Summarize a meeting transcript
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-compositionality-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Compositionality checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-applying-decision-aides-conditionally" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Applying decision aides conditionally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes and best practices
     </span>
   </a>
   
@@ -571,65 +651,10 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#start-a-session-with-linearcontext" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start a Session with LinearContext
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab_02/readme/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lab 2. Instruct-Validate-Repair
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lab_03/readme/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lab 3. Compositional Code with Generative Stubs
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -786,46 +811,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mellea" class="md-nav__link">
+  <a href="#goals" class="md-nav__link">
     <span class="md-ellipsis">
-      Mellea
+      Goals
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#main-code-snippets-of-interest" class="md-nav__link">
     <span class="md-ellipsis">
-      Features
+      Main code snippets of interest
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lab-1-hello-mellea" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lab 1: Hello Mellea
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lab 1: Hello Mellea">
+    <nav class="md-nav" aria-label="Main code snippets of interest">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#imports" class="md-nav__link">
+  <a href="#1-imports-and-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Imports
+      1. Imports and setup
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chat-with-mellea" class="md-nav__link">
+  <a href="#2-summariser-library" class="md-nav__link">
     <span class="md-ellipsis">
-      Chat with Mellea
+      2. Summariser library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-decision-aides-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Decision-aides library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-example-summarize-a-meeting-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Example: Summarize a meeting transcript
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-compositionality-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Compositionality checks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-applying-decision-aides-conditionally" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Applying decision aides conditionally
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes and best practices
     </span>
   </a>
   
@@ -833,15 +894,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-a-session-with-linearcontext" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start a Session with LinearContext
-    </span>
-  </a>
   
 </li>
       
@@ -864,83 +916,89 @@
   
 
 
-<h1 id="what-is-generative-computing">What is Generative Computing?</h1>
-<p>A generative program is any computer program that contains calls to an LLM. As we will see throughout the documentation, LLMs can be incorporated into software in a wide variety of ways. Some ways of incorporating LLMs into programs tend to result in robust and performant systems, while others result in software that is brittle and error-prone.</p>
-<p>Generative programs are distinguished from classical programs by their use of functions that invoke generative models. These generative calls can produce many different data types — strings, booleans, structured data, code, images/video, and so on. The model(s) and software underlying generative calls can be combined and composed in certain situations and in certain ways (e.g., LoRA adapters as a special case). In addition to invoking generative calls, generative programs can invoke other functions, written in languages that do not have an LLM in their base, so that we can, for example, pass the output of a generative function into a DB retrieval system and feed the output of that into another generator. Writing generative programs is difficult because generative programs interleave deterministic and stochastic operations.</p>
-<p>If you would like to read more about this, please don't hesitate to take a look <a href="https://docs.mellea.ai/overview/project-mellea">here</a>.</p>
-<h2 id="mellea">Mellea</h2>
-<p><a href="https://github.com/generative-computing/mellea">Mellea</a> is a library for writing generative programs. Generative programming replaces flaky agents and brittle prompts with structured, maintainable, robust, and efficient AI workflows.</p>
-<h2 id="features">Features</h2>
+<h1 id="lab-3-writing-compositional-code-with-generative-stubs">Lab 3 — Writing Compositional Code with Generative Stubs</h1>
+<p>This lab demonstrates how to use Mellea's <code>@generative</code> slots as compositional building blocks. It shows a small summarizer library, decision-aide functions, and compositionality checks that let LLM-powered functions be combined in predictable, testable ways.</p>
+<p>In classical programming, pure (stateless) functions are a simple and powerful abstraction. A pure function takes inputs, computes outputs, and has no side effects. Generative programs can also use functions as abstraction boundaries, but in a generative program the meaning of the function can be given by an LLM instead of an interpreter or compiler. This is the idea behind a GenerativeSlot.</p>
+<p>A GenerativeSlot is a function whose implementation is provided by an LLM. In Mellea, you define these using the <code>@generative</code> decorator. The function signature specifies the interface, and the docstring (or type annotations) guides the LLM in producing the output.</p>
+<p>In this lab, we will see how <strong>compositionality checks</strong> can be used to combine libraries of generative functions.</p>
+<h2 id="goals">Goals</h2>
 <ul>
-<li>A standard library of opinionated prompting patterns.</li>
-<li>Sampling strategies for inference-time scaling.</li>
-<li>Clean integration between verifiers and samplers.</li>
-<li>Batteries-included library of verifiers.</li>
-<li>Support for efficient checking of specialized requirements using activated LoRAs.</li>
-<li>Train your own verifiers on proprietary classifier data.</li>
-<li>Compatible with many inference services and model families. Control cost and quality by easily lifting and shifting workloads between:</li>
-<li>inference providers</li>
-<li>model families</li>
-<li>model sizes</li>
-<li>Easily integrate the power of LLMs into legacy code-bases (mify).</li>
-<li>Sketch applications by writing specifications and letting <code>mellea</code> fill in the details (generative slots).</li>
-<li>Get started by decomposing your large unwieldy prompts into structured and maintainable Mellea problems.</li>
+<li>Show how to define generative functions (GenerativeSlots) with clear signatures and docstrings.</li>
+<li>Build small, composable libraries: summarizers and decision aides.</li>
+<li>Use compositionality checks to gate downstream decisions.</li>
+<li>Demonstrate wiring these pieces together on a meeting transcript.</li>
 </ul>
-<h2 id="lab-1-hello-mellea">Lab 1: Hello Mellea</h2>
-<p>Running <code>mellea.start_session()</code> initialize a new <code>MelleaSession</code>. The session holds three things:</p>
-<ol>
-<li>The model to use for this session.</li>
-<li>An inference engine; i.e., the code that actually calls our model. We will be using ollama, but you can also use Huggingface or any OpenAI-compatible endpoint.</li>
-<li>A <code>Context</code>, which tells Mellea how to remember context between requests. This is sometimes called the "Message History" in other frameworks. Throughout these early tutoriala, we will be using a <code>SimpleContext</code>. In <code>SimpleContext</code>, <strong>every request starts with a fresh context</strong>. There is no preserved chat history between requests. Mellea provides other types of context, but for now we will not be using those features. See the <a href="https://github.com/generative-computing/mellea">Mellea Tutorials</a> for further details.</li>
-</ol>
-<h3 id="imports">Imports</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Import necessary libraries</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mellea</span>
+<hr />
+<h2 id="main-code-snippets-of-interest">Main code snippets of interest</h2>
+<h3 id="1-imports-and-setup">1. Imports and setup</h3>
+<p>The notebook initialises Mellea and type hints. This cell sets the execution environment used by all generative calls.</p>
+<p>Key items:
+- <code>from mellea import generative</code>
+- <code>from typing import Literal</code></p>
+<h3 id="2-summariser-library">2. Summariser library</h3>
+<p>A small collection of generative slots that produce human-readable summaries.</p>
+<p>Representative function signatures:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@generative</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">summarize_meeting</span><span class="p">(</span><span class="n">transcript</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Display utilities</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nd">@generative</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">summarize_contract</span><span class="p">(</span><span class="n">contract_text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Format code cells with black</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">jupyter_black</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">jupyter_black</span><span class="o">.</span><span class="n">load</span><span class="p">()</span> 
-</span></code></pre></div>
-<p>To use Mellea we import the <code>mellea</code> library. The other imports are only for displaying output and for formatting the notebook cells and can be ignored.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you see something about the Rust compiler, please confirm you are using python3.11, or python3.12 anything above that has a Rust dependency.</p>
-</div>
-<h3 id="chat-with-mellea">Chat with Mellea</h3>
-<p>We can have a simple chat with a <code>mellea</code> session by starting a session, <code>m</code>, and then using the <code>chat</code> function. We can then display the answer by displaying the answer objects content.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Create a Mellea model using the granite3.3:8b model and the ollama inference engine</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">m</span> <span class="o">=</span> <span class="n">mellea</span><span class="o">.</span><span class="n">start_session</span><span class="p">()</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nd">@generative</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">summarize_short_story</span><span class="p">(</span><span class="n">story</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
+</span></code></pre></div></p>
+<p>Each function's docstring guides the LLM to produce outputs matching the annotated return type (here, <code>str</code>). Please view the lab notebook to see the full docstring.</p>
+<p>Note:
+   <strong><code>@generative</code></strong>: Converts a function into an AI-powered function. This decorator transforms a regular Python function into one that uses an LLM to generate outputs. The function's entire signature - including its name, parameters, docstring, and type hints - is used to instruct the LLM to imitate that function's behavior. The output is guaranteed to match the return type annotation using structured outputs and automatic validation.</p>
+<h3 id="3-decision-aides-library">3. Decision-aides library</h3>
+<p>Generative slots that turn structured summaries into actionable recommendations or mitigations.</p>
+<p>Representative functions:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@generative</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">propose_business_decision</span><span class="p">(</span><span class="n">summary</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Send a chat message to the model</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># In this example, we are asking for fun trivia about IBM and the early history of AI.</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Since we are using a SimpleContext, there is no preserved chat history between requests.</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Each request starts fresh.</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">answer</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="s2">&quot;tell me some fun trivia about IBM and the early history of AI.&quot;</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">)</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># Display the answer in markdown format</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">answer</span><span class="o">.</span><span class="n">content</span><span class="p">))</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nd">@generative</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">generate_risk_mitigation</span><span class="p">(</span><span class="n">summary</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nd">@generative</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">generate_novel_recommendations</span><span class="p">(</span><span class="n">summary</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
 </span></code></pre></div>
-<h2 id="start-a-session-with-linearcontext">Start a Session with LinearContext</h2>
-<p>In the first example we have used SimpleContext, a context manager that resets the chat message history on each model call. That is, the model's context is entirely determined by the current Component.</p>
-<p>Mellea also provides a LinearContext, which behaves like a chat history. We can use the ChatContext to interact with chat models</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mellea</span><span class="w"> </span><span class="kn">import</span> <span class="n">start_session</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">mellea.stdlib.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatContext</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Create a session with chat context</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">m</span> <span class="o">=</span> <span class="n">start_session</span><span class="p">(</span><span class="n">ctx</span><span class="o">=</span><span class="n">ChatContext</span><span class="p">())</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Generate and store responses</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">problem</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;Make up a math problem.&quot;</span><span class="p">)</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">solution</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;Solve your math problem.&quot;</span><span class="p">)</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># Display the problem and solution using the content attribute</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Problem:</span><span class="se">\n</span><span class="si">{</span><span class="n">problem</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="se">\n</span><span class="s2">Solution:</span><span class="se">\n</span><span class="si">{</span><span class="n">solution</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+<p>These are intended to be called only when upstream compositionality checks validate the summary.</p>
+<h3 id="4-example-summarize-a-meeting-transcript">4. Example: Summarize a meeting transcript</h3>
+<p>A long example transcript is provided and passed to the summarizer:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">m</span> <span class="o">=</span> <span class="n">mellea</span><span class="o">.</span><span class="n">start_session</span><span class="p">()</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">summary</span> <span class="o">=</span> <span class="n">summarize_meeting</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">transcript</span><span class="o">=</span><span class="n">transcript</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# Summary of meeting:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">summary</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
 </span></code></pre></div>
+<p>This demonstrates end-to-end use of a generative slot and rendering results in a notebook.</p>
+<h3 id="5-compositionality-checks">5. Compositionality checks</h3>
+<p>Small generative validators that return <code>Literal["yes","no"]</code> and are used to control flow:</p>
+<ul>
+<li><code>has_structured_conclusion(summary: str) -&gt; Literal["yes","no"]</code></li>
+<li><code>contains_actionable_risks(summary: str) -&gt; Literal["yes","no"]</code></li>
+<li><code>has_theme_and_plot(summary: str) -&gt; Literal["yes","no"]</code></li>
+</ul>
+<p>These functions let the program ask LLMs whether an output satisfies a structural property before invoking downstream decision aides.</p>
+<h3 id="6-applying-decision-aides-conditionally">6. Applying decision aides conditionally</h3>
+<p>Example control flow that shows how compositionality checks gate downstream actions:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span> <span class="n">contains_actionable_risks</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="n">summary</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">mitigation</span> <span class="o">=</span> <span class="n">generate_risk_mitigation</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="n">summary</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;## Mitigation:</span><span class="se">\n</span><span class="si">{</span><span class="n">mitigation</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Summary does not contain actionable risks.&quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<p>and</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">if</span> <span class="n">has_structured_conclusion</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="n">summary</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">decision</span> <span class="o">=</span> <span class="n">propose_business_decision</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">summary</span><span class="o">=</span><span class="n">summary</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# Decision:</span><span class="se">\n</span><span class="si">{</span><span class="n">decision</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Summary lacks a structured conclusion.&quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<h3 id="notes-and-best-practices">Notes and best practices</h3>
+<ul>
+<li>Keep generative slot docstrings precise: the function signature + docstring form the spec the LLM imitates.</li>
+<li>Prefer machine-friendly return types (lists, dicts, typed literals) to simplify downstream aggregation and validation.</li>
+<li>Use compositionality checks to reduce downstream hallucination and to make control flow auditable.</li>
+</ul>
 
 
 
