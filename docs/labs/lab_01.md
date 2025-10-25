@@ -44,6 +44,32 @@ Running `mellea.start_session()` initialize a new `MelleaSession`. The session h
 
 
 
+## Prerequisites
+
+This lab is a [Jupyter notebook](https://jupyter.org/). Please follow the instructions in [pre-work](../labs/pre_work.md) to configure the environment for the lab.
+
+
+
+
+## Loading the Lab
+
+To run the notebook from command line in Jupyter using the activated virtual environment from the [pre-work](../labs/pre_work.md), run:
+
+```shell
+jupyter-lab
+```
+
+When Jupyter Lab opens the path to the `labs/lab_01.ipynb` notebook file is relative to the root folder from the git clone in the  [pre-work](../labs/pre_work.md). The folder navigation pane on the left-hand side can be used to navigate to the file. Once the notebook has been found it can be double clicked and it will open to the pane on the right.
+
+Alternatively, if you already have it configured and setup on you laptop, VSCode could be used either (don't forget to select the virtual environment).
+
+
+
+!!! Note
+    All notebooks in this set of examples can be opened in this manner apart from `lab_07` which is a python script and is run from the command line.
+
+
+
 ### Imports
 
 ```python
