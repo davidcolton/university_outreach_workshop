@@ -26,9 +26,7 @@ nav:
       - Lab 6. Building a Knowledge Base: labs/lab_06.md
       - Lab 7. Putting it all together - Mini Researcher: labs/lab_07.md
   - References:
-      - IBM Granite Community: https://github.com/ibm-granite-community
       - Mellea Project: https://mellea.ai/docs/
-      - Docling Project: https://github.com/docling-project/docling
 
 # Extensions
 markdown_extensions:
